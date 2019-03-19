@@ -52,3 +52,19 @@ rails s
   }
 }
 ```
+
+Создать нового юзера:
+```
+mutation{
+  createUser(input:{name: "123"}){
+    result
+    user{
+      id
+      name
+      posts {
+        id
+      }
+    }
+  }
+}
+```
